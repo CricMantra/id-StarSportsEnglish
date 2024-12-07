@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe Src</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="player-container">
+        <iframe 
+            id="contentFrame" 
+            sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" 
+            allow="encrypted-media" 
+            allowfullscreen="true" 
+            src="https://criccoder264.pages.dev/SSE">
+        </iframe>
+    </div>
+
+    <div id="popup">
+        <div class="popup-content">
+          <h2>Support Us!</h2>
+          <p>Join Our Telegram Channel @CricMantrahd.</p>
+          <button class="join-btn" onclick="window.open('https://t.me/+kfJZ4exLottkOTY1', '_blank')">Join Now</button>
+          <button class="close-btn" onclick="closePopup()">Already Joined</button>
+        </div>
+      </div>
+</body>
+</html>
